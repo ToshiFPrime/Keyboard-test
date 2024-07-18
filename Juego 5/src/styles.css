@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(tech-background.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#keyboard {
+    margin-top: 20px;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.key {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 2px;
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.key.wide {
+    width: 70px;
+}
+
+.key.extra-wide {
+    width: 150px;
+}
+
+.key.pressed {
+    background-color: #999;
+    color: white;
+}
+
+.key.active {
+    background-color: #4CAF50; /* Cambia a un color verde cuando se presiona */
+    color: white;
+}
